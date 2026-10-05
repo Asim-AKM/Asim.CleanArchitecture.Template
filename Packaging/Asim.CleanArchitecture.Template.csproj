@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<PackageId>Asim.CleanArchitecture.Template</PackageId>
+		<PackageVersion>1.0.0</PackageVersion>
+
+		<Title>Asim Clean Architecture Template</Title>
+		<Authors>Asim</Authors>
+		<Description>
+			A .NET 10 Clean Architecture Web API template with Domain, Application, Infrastructure and API layers, Generic Repository, Unit of Work, EF Core, SQL Server, Dependency Injection, Global Exception Handling and JWT Authentication.
+		</Description>
+
+		<PackageTags>dotnet-new;template;aspnet-core;web-api;clean-architecture;dotnet10;csharp;ef-core;jwt;repository;unit-of-work</PackageTags>
+
+		<PackageProjectUrl>https://github.com/Asim-AKM/Asim.CleanArchitecture.Template</PackageProjectUrl>
+
+		<PackageType>Template</PackageType>
+
+		<TargetFramework>net10.0</TargetFramework>
+
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<ContentTargetFolders>content</ContentTargetFolders>
+
+		<NoWarn>$(NoWarn);NU5128</NoWarn>
+		<NoDefaultExcludes>true</NoDefaultExcludes>
+
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/Asim-AKM/Asim.CleanArchitecture.Template</RepositoryUrl>
+
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<LocalizeTemplates>false</LocalizeTemplates>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.TemplateEngine.Tasks"
+						  Version="*"
+						  PrivateAssets="all"
+						  IsImplicitlyDefined="true" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="content\**\*"
+				 Exclude="content\**\bin\**;content\**\obj\**" />
+
+		<Compile Remove="**\*" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="README.md"
+			  Pack="true"
+			  PackagePath="" />
+	</ItemGroup>
+
+</Project>

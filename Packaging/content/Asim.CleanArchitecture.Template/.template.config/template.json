@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "Asim",
+  "classifications": [
+    "Web",
+    "ASP.NET Core",
+    "Clean Architecture",
+    "Web API"
+  ],
+  "name": "Asim Clean Architecture API",
+  "identity": "Asim.CleanArchitecture.API",
+  "shortName": "asim-clean-api",
+  "description": "A .NET 10 Clean Architecture Web API solution with Domain, Application, Infrastructure and API layers.",
+  "sourceName": "MyProject",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  }
+}
